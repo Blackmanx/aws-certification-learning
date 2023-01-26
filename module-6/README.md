@@ -87,8 +87,7 @@ With [EC2](https://aws.amazon.com/ec2/?nc1=h_ls) you have full control at the op
 |:----------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Balance between compute, memory and networking | High performance processors                                                                                                                                  | Fast performance for processing large data sets in memory                                                                                                                                                                                 | Great for storage-intensive tasks that require high sequential read and write access to large data sets on local storage                                                                                     |
 | Labeled with Tx, Mx and A1 (and Mac)           | Labeled with Cx                                                                                                                                              | Labeled with Rx, Xx, High Memory and z1d                                                                                                                                                                                                  | Labeled as Ix, Dx and H1                                                                                                                                                                                     |
-| Good for web servers or code repositories      | Great for tasks like HPC, HP web servers, media transcoding, batch processing workloads, dedicated gaming servers, scientific modeling, machine learning.... | Great for High performance, relational or non-relational databases Distributed web scale cache stores In-memory databases optimized for BI (business intelligence) Applications performing real-time processing of  big unstructured data | Great for High frequency online transaction processing (OLTP) systems Relational & NoSQL databases Cache for in-memory databases (for example, Redis) Data warehousing applications Distributed file systems |
-
+| <h4>Great for:</h4> Web servers or code repositories      | <h4>Great for:</h4> Tasks like HPC <br><br> HP web servers <br><br> Media transcoding <br><br> Batch processing workloads <br><br> Dedicated gaming servers <br><br> Scientific modeling <br><br> Machine learning | <h4>Great for:</h4> High performance, relational or non-relational databases <br><br> Distributed web scale cache stores <br><br> In-memory databases optimized for BI (business intelligence) <br><br> Applications performing real-time processing of  big unstructured data | <h4>Great for</h4> <br><br> High frequency online transaction processing (OLTP) systems <br><br> Relational & NoSQL databases <br><br> Cache for in-memory databases (for example, Redis) <br><br> Data warehousing applications Distributed file systems |
 
 **Nice to know**
 
@@ -131,6 +130,28 @@ AMIs are regional. You can only launch an AMI from the region in which it is sto
 - Amazon Elastic Block Store (EBS) provides persistent storage. EBS snapshots, which reside on Amazon S3, are used to create the volume.
 - Instance store volumes are ephemeral (non-persistent). That means data is lost if the instance is shut down. A template stored on Amazon S3 is used to create the volume.
 
+### **Security Groups**
+
+Security Groups are the fundamental of network security in AWS, as they control how traffic is allowed into or out of our EC2 instances (as well as some other services) within a region/VPC combination.
+They can only contain **allow** rules, and they can reference IP or other security groups. If your application is not accessible by a time out error, it's a security
+group issue. Otherwise, if it's a connection refused error, it's the app's fault.
+
+They regulate:
+- Access to Ports
+- Authorised IP ranges – IPv4 and IPv6
+- Control of inbound network (from other to the instance)
+- Control of outbound network (from the instance to other)
+
+> All inbound traffic is **blocked** by default and all outbound traffic is **allowed**
+> by default.
+
+### **EC2 Instance Connect**
+
+Instance Connect lets you connect to your EC2 Instance within your browser.
+In order to do this, AWS uploads a temporary key onto your EC2 instance, and it
+requires port 22 to be open.
+
+It only works on **Amazon Linux 2** instances.
 
 ### **Rehost**
 
@@ -160,98 +181,14 @@ https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.horizo
 ### **Billing and provisioning**
 
 There are several options for how you consume and pay for Amazon EC2 instances.
-
-**On demand**
-- Pay for hours used with no commitment.
-- Low cost and flexibility with no upfront cost.
-- Ideal for auto scaling groups and unpredictable workloads.
-- Good for dev/test.
-
-**Spot**
-- Amazon EC2 Spot Instances let you take advantage of unused EC2 capacity in the AWS cloud.
-- Spot Instances are available at up to a 90% discount compared to On-Demand prices.
-- You can use Spot Instances for various stateless, fault-tolerant, or flexible applications such as big data, containerized workloads, CI/CD, web servers, high-performance computing (HPC), and other test & development workloads.
-- You can request Spot Instances by using the Spot management console, CLI, API or the same interface that is used for launching On-Demand instances by indicating the option to use Spot.
-- You can also select a Launch Template or a pre-configured or custom Amazon Machine Image (AMI), configure security and network access to your Spot instance, choose from multiple instance types and locations, use static IP endpoints, and attach persistent block storage to your Spot instances.
-- **New pricing model:** The Spot price is determined by long term trends in supply and demand for EC2 spare capacity.
-    - You don’t have to bid for Spot Instances in the new pricing model, and you just pay the Spot price that’s in effect for the current hour for the instances that you launch.
-    - Spot Instances receive a two-minute interruption notice when these instances are about to be reclaimed by EC2, because EC2 needs the capacity back.
-    - Instances are not interrupted because of higher competing bids.
-- To reduce the impact of interruptions and optimize Spot Instances, diversify, and run your application across multiple capacity pools.
-- Each instance family, each instance size, in each Availability Zone, in every Region is a separate Spot pool.
-- You can use the RequestSpotFleet API operation to launch thousands of Spot Instances and diversify resources automatically.
-- To further reduce the impact of interruptions, you can also set up Spot Instances and Spot Fleets to respond to an interruption notice by stopping or hibernating rather than terminating instances when capacity is no longer available.
-
-**Reserved**
-- Purchase (or agree to purchase) usage of EC2 instances in advance for significant discounts over On-Demand pricing.
-- Provides a capacity reservation when used in a specific AZ.
-- AWS Billing automatically applies discounted rates when you launch an instance that matches your purchased RI.
-- Capacity is reserved for a term of 1 or 3 years.
-- EC2 has three RI types: Standard, Convertible, and Scheduled.
-- Standard = commitment of 1 or 3 years, charged whether it’s on or off.
-- Scheduled = reserved for specific periods of time, accrue charges hourly, billed in monthly increments over the term (1 year).
-- Scheduled RIs match your capacity reservation to a predictable recurring schedule.
-- For the differences between standard and convertible RIs, see the table below.
-- RIs are used for steady state workloads and predictable usage.
-- Ideal for applications that need reserved capacity.
-- Upfront payments can reduce the hourly rate.
-- Can switch AZ within the same region.
-- Can change the instance size within the same instance type.
-- Instance type modifications are supported for Linux only.
-- Cannot change the instance size of Windows RIs.
-- Billed whether running or not.
-- Can sell reservations on the AWS marketplace.
-- Can be used in Auto Scaling Groups.
-- Can be used in Placement Groups.
-- Can be shared across multiple accounts within Consolidated Billing.
-- If you don’t need your RI’s, you can try to sell them on the Reserved Instance Marketplace.
-
-| 	|Standard	|Convertible|
-|---|-----------|-----------|
-|Terms	|1 year, 3 year|	1 year, 3 year|
-|Average discount off On-Demand price	|40% – 60%	|31% – 54%|
-|Change AZ, instance size, networking type	|Yes via ModifyReservedInstance API or console	|Yes via ExchangeReservedInstance API or console|
-|Change instance family, OS, tenancy, payment options	|No	|Yes|
-|Benefit from price reductions	|No	|Yes|
-
-**RI Attributes:**
-- Instance type – designates CPU, memory, networking capability.
-- Platform – Linux, SUSE Linux, RHEL, Microsoft Windows, Microsoft SQL Server.
-- Tenancy – Default (shared) tenancy, or Dedicated tenancy.
-- Availability Zone (optional) – if AZ is selected, RI is reserved, and discount applies to that AZ (Zonal RI). If no AZ is specified, no reservation is created but the discount is applied to any instance in the family in any AZ in the region (Regional RI).
+|                                                          **On Demand**                                                         |                                                                                                                                                                                                                                                                                                             **Spot Instances**                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                 **Reserved Instances**                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                        **Dedicated Hosts**                                                                                                                                                                                                                                                        |                                                                                                                            **Saving Plans**                                                                                                                           |
+|:------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <br>Pay for what you use:<br><br>Linux or Windows: Billing per second, after the first<br>minute<br>Other OS: Billing per hour | <br>Can get a 90% discount compared to On-Demand<br><br>Instances can be lost at any point of time if your<br>max price is lower than current spot price, or<br>interrupted when AWS needs the EC2 capacity back<br><br>You can use the RequestSpotFleet API operation to launch thousands<br>of Spot Instances and diversify resources automatically.<br>To further reduce the impact of interruptions, you can also <br>set up Spot Instances and Spot Fleets (Spot Instances + On-Demand)<br>to respond to aninterruption notice by stopping or hibernating rather <br>than terminating instances when capacity is no longer available. | Up to 72% discount compared to On-Demand<br>Specific instance attributes (Instance Type, Region, Tenancy, OS)<br>Those instance attributes can be changed in convertible<br>reserved instances, for a bit higher price.<br><br>Reservation Period: 1 Year or 3 years (the longer, the cheaper)<br>Reserved Instance Scope: Regional or Zonal<br>Payment options: No upfront, Partial Upfront or All Upfront<br>(The more you pay upfront, the cheaper) | A physical server with EC2 instance capacity fully<br>dedicated to your use<br>Allows you to address **compliance requirements** and<br>**use your existing server-bound software licenses**<br><br>**On-demand**: Pay per second for active Dedicated Host<br>**Reserved**: 1 or 3 years (No upfront payments)<br><br>**Dedicated Instances**<br>Instances that run on hardware that's dedicated<br>to you and may share hardware with other instances<br>in the same account, and there's no control over instance<br>placement | Get a discount based on long-term usage (up to 72% - same as RIs)<br>Commit to a certain type of usage ($10/hour for 1 or 3 years)<br>Usage beyond EC2 Savings Plans is billed at the On-Demand price<br><br>It's locked to a specific instance family and AWS Region |
+| Has high cost, but no upfront payment and no<br>long-term commitment                                                           | Most cost-efficient instances in AWS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Cheaper than On-Demand if you need complete uptime                                                                                                                                                                                                                                                                                                                                                                                                     | The most expensive option                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | It's a good option for long-term usage                                                                                                                                                                                                                                |
+| <br><br>Recommended for short-term and un-interrupted workloads,<br>unpredictable applications                                 | Useful for workloads that are resilient to<br>failure, or doesn't need to be up all the time:<br>Distributed Workloads<br>Batch jobs<br>Data analysis<br><br>**It's not suitable for critical jobs or databases**                                                                                                                                                                                                                                                                                                                                                                                                                          | <br><br><br>Useful for stead-state usage applications like databases.                                                                                                                                                                                                                                                                                                                                                                                  | <br><br>Useful for software that have complicated licensing model<br>(Bring Your Own License) or companies with strong<br>regulatory or compliance needs                                                                                                                                                                                                                                                                                                                                                                          | You need to stay a lot of time in a specific instance                                                                                                                                                                                                                 |
 
 ### **Comparing Amazon EC2 Pricing Models**
 
-The following table provides a brief comparison of On-demand, Reserved and Spot pricing models:
-|On-Demand	|Reserved	|Spot|
-|-----------|-----------|----|
-|No upfront fee	|Options: No upfront, partial upfront or all upfront	|No upfront fee|
-|Charged by hour or second	|Charged by hour or second	|Charged by hour or second|
-|No commitment	|1-year or 3-year commitment	|No commitment|
-|Ideal for short term needs or unpredictable workloads	|Ideal for steady-state workloads and predictable usage	|Ideal for cost-sensitive, compute intensive use cases that can withstand interruption|
-
-You are limited to running up to a total of 20 On-Demand instances across the instance family, purchasing 20 Reserved Instances, and requesting Spot Instances per your dynamic spot limit per region (by default).
-
-**Dedicated hosts**
-- Physical servers dedicated just for your use.
-- You then have control over which instances are deployed on that host.
-- Available as On-Demand or with Dedicated Host Reservation.
-- Useful if you have server-bound software licenses that use metrics like per-core, per-socket, or per-VM.
-- Each dedicated host can only run one EC2 instance size and type.
-- Good for regulatory compliance or licensing requirements.
-- Predictable performance.
-- Complete isolation.
-- Most expensive option.
-- Billing is per host.
-
-**Dedicated instances**
-- Virtualized instances on hardware just for you.
-- Also uses physically dedicated EC2 servers.
-- Does not provide the additional visibility and controls of dedicated hosts (e.g. how instances are placed on a server).
-- Billing is per instance.
-- May share hardware with other non-dedicated instances in the same account.
-- Available as On-Demand, Reserved Instances, and Spot Instances.
-- Cost additional $2 per hour per region.
 
 **The following table describes some of the differences between dedicates instances and dedicated hosts:**
 
