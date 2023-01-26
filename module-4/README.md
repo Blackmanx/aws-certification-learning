@@ -1,6 +1,6 @@
  <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 4: Cloud Security (AWS Security Services)
 
@@ -20,12 +20,12 @@
 13. <a href="#section-13"> Amazon Systems Manager Parameter Store </a>
 14. <a href="#section-14"> Amazon Secrets Manager </a>
 15. <a href="#section-15"> Amazon Audit Manager </a>
-16. <a href="#section-16"> Amazon Certificate Manager</a>   
+16. <a href="#section-16"> Amazon Certificate Manager</a>
 17. <a href="#section-17"> Amazon Detective </a>
 18. <a href="#section-18"> Amazon Firewall Manager </a>
 19. <a href="#section-19"> Amazon Macie </a>
-20. <a href="#section-20"> Amazon Network Firewall</a> 
-21. <a href="#section-21"> Amazon Resource Access Manager (AWS RAM)</a> 
+20. <a href="#section-20"> Amazon Network Firewall</a>
+21. <a href="#section-21"> Amazon Resource Access Manager (AWS RAM)</a>
 22. <a href="#section-22"> Amazon Security Hub  </a>
 23. <a href="#section-23"> Amazon Shield </a>
 24. <a href="#section-24"> Amazon WAF </a>
@@ -201,7 +201,7 @@ Two levels – Standard and Advanced.
 
 **AWS Shield Advanced:**
 - Optional DDoS mitigation service ($3,000 per month per organization)
-- Protect against more sophisticated attack on: 
+- Protect against more sophisticated attack on:
      - Amazon EC2
      - Elastic Load Balancing (ELB)
      - Amazon CloudFront
@@ -589,7 +589,7 @@ You can then reference values ​​using the unique name you specified when you
 You can rotate secrets on a schedule or on demand by using the Secrets Manager console, AWS SDK, or AWS CLI.
 
 Secrets Manager natively supports rotating credentials for databases hosted on Amazon RDS and Amazon DocumentDB and clusters hosted on Amazon Redshift.
-You can extend Secrets Manager to rotate other secrets, such as credentials for Oracle databases hosted on EC2 or OAuth refresh tokens, by using custom AWS 
+You can extend Secrets Manager to rotate other secrets, such as credentials for Oracle databases hosted on EC2 or OAuth refresh tokens, by using custom AWS
 
 **Lambda functions.**
 
@@ -599,10 +599,10 @@ A secret consists of a set of credentials (user name and password), and the conn
 
 - By default, Secrets Manager does not write or cache the secret to persistent storage.
 - By default, Secrets Manager only accepts requests from hosts that use the open standard Transport Layer Security (TLS) and Perfect Forward Secrecy.
-- You can control access to the secret using AWS Identity and Access Management (IAM) policies. 
+- You can control access to the secret using AWS Identity and Access Management (IAM) policies.
 - You can tag secrets individually and apply tag-based access controls.
 - You can configure VPC endpoints to keep traffic between your VPC and Secrets Manager within the AWS network.
-- Secrets Manager does not immediately delete secrets. Instead, Secrets Manager immediately makes the secrets inaccessible and scheduled for deletion after a recovery window of a minimum of seven days. Until the recovery window ends, you can recover a secret you previously deleted. 
+- Secrets Manager does not immediately delete secrets. Instead, Secrets Manager immediately makes the secrets inaccessible and scheduled for deletion after a recovery window of a minimum of seven days. Until the recovery window ends, you can recover a secret you previously deleted.
 - By using the CLI, you can delete a secret without a recovery window.
 Compliance
 
@@ -819,7 +819,7 @@ Shield Tiers and Features
 - It automatically provides additional mitigation capacity to protect against larger DDoS attacks. The DDoS Response Team also applies manual mitigations for more complex and sophisticated DDoS attacks.
 - It gives you complete visibility into DDoS attacks with near real-time notification via CloudWatch and detailed diagnostics on the “AWS WAF and AWS Shield” Management Console.
 - Shield Advanced comes with “DDoS cost protection”, a safeguard from scaling charges as a result of a DDoS attack that cause usage spikes on your AWS services. It does so by providing service credits for charges due to usage spikes.
-- It is available globally on all CloudFront and Route 53 edge locations. 
+- It is available globally on all CloudFront and Route 53 edge locations.
 - With Shield Advanced you will be able to see the history of all incidents in the trailing 13 months.
 
 ### **Pricing**
@@ -879,7 +879,7 @@ https://docs.aws.amazon.com/general/latest/gr/root-vs-iam.html
 ---------------------------------------------------------------------------------------
 ## <a id="section-26"></a> **26 - Compliance Programs**
 
-AWS enables covered entities and their business associates subject to the U.S. Health Insurance 
+AWS enables covered entities and their business associates subject to the U.S. Health Insurance
 
 Portability and Accountability Act of 1996 (HIPAA) to use the secure AWS environment to process, maintain, and store protected health information.
 
@@ -898,7 +898,7 @@ https://aws.amazon.com/compliance/hipaa-compliance/
 --------------------------------------------------------------------------------------------------------------
 ## <a id="section-27"></a> **27 - Encryption and Unencrypted**
 
-AWS enables covered entities and their business associates subject to the U.S. Health Insurance 
+AWS enables covered entities and their business associates subject to the U.S. Health Insurance
 
 Portability and Accountability Act of 1996 (HIPAA) to use the secure AWS environment to process, maintain, and store protected health information.
 
@@ -918,7 +918,7 @@ Using Encryption Services:
 - ncryption has a minimal impact on latency
 - EBS Encryption leverages keys from KMS (AES-256)
 
-### **RDS Security - Encryption** 
+### **RDS Security - Encryption**
 - At rest encryption
      - Possibility to encrypt the master & read replicas with AWS KMS - AES-256 encryption
      - Encryption has to be defined at launch time
@@ -1035,11 +1035,11 @@ Using Encryption Services:
 - Support for KMS encryption at rest + HTTPS
 
 
-### **Links and Documentation** 
+### **Links and Documentation**
 **Cheat Sheets**
 
 https://digitalcloud.training/aws-kms/
- 
+
 https://tutorialsdojo.com/aws-key-management-service-aws-kms/
 
 

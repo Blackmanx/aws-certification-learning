@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Módulo 12: AWS Integration & Messaging
 
@@ -35,7 +35,7 @@
 
 ### SNS integrates with a lot of AWS services
 
-- CloudWatch Alarms 
+- CloudWatch Alarms
 - AWS Budgets
 - Lambda
 - Auto Scaling Group (Notifications)
@@ -369,9 +369,9 @@ An integration service that automates data flows by securely integrating third-p
 - Publish events related to the status of a flow using Amazon Event Bridge.
 
 ### **How it works**
-- With Amazon AppFlow automate bi-directional data flows between SaaS applications and AWS services in just a few clicks. 
-- Run the data flows at the frequency you choose, whether on a schedule, in response to a business event, or on demand. 
-- Simplify data preparation with transformations, partitioning, and aggregation. 
+- With Amazon AppFlow automate bi-directional data flows between SaaS applications and AWS services in just a few clicks.
+- Run the data flows at the frequency you choose, whether on a schedule, in response to a business event, or on demand.
+- Simplify data preparation with transformations, partitioning, and aggregation.
 - Automate preparation and registration of your schema with the AWS Glue Data Catalog so you can discover and share data with AWS analytics and machine learning services.
 
 ### **Pricing**
@@ -433,10 +433,10 @@ https://www.youtube.com/results?search_query=aws+AppFlow+hands+on
 
 ### What Is Amazon EventBridge?
 
-EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. 
+EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications.
 Use it to route events from sources such as home-grown applications, AWS services, and third- party software to consumer applications across your organization. EventBridge provides a simple and consistent way to ingest, filter, transform, and deliver events so you can build new applications quickly.
 
-EventBridge event buses are well suited for many-to-many routing of events between eventdriven services. 
+EventBridge event buses are well suited for many-to-many routing of events between eventdriven services.
 
 EventBridge Pipes (p. 90) is intended for point-to-point integrations between
 
@@ -444,7 +444,7 @@ EventBridge Pipes (p. 90) is intended for point-to-point integrations between
 
 Amazon EventBridge Pipes connects sources to targets. It reduces the need for specialized knowledge and integration code when developing event driven architectures, fostering consistency across your company’s applications. To set up a pipe, you choose the source, add optional filtering, define optional enrichment, and choose the target for the event data.
 
-EventBridge Pipes could be used to create an ecommerce system. Imagine that you have an API that contains customer metadata, such as shipping addresses. The source might be an Amazon SQS order received message. 
+EventBridge Pipes could be used to create an ecommerce system. Imagine that you have an API that contains customer metadata, such as shipping addresses. The source might be an Amazon SQS order received message.
 
 The pipe then sends that data to an Amazon API Gateway API enrichment that returns the customer information for that order. Final
 
@@ -486,7 +486,7 @@ https://www.youtube.com/results?search_query=Amazon+EventBridge+hands+On
 
 **Definition**
 
-AWS Step Functions 
+AWS Step Functions
 • Build serverless visual workflow to orchestrate your Lambda functions
 • Features: sequence, parallel, conditions, timeouts, error handling, …
 • Can integrate with EC2, ECS, On -premises servers, API Gateway, SQS queues

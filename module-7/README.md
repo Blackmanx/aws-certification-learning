@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 7: Storege
 
@@ -2126,7 +2126,7 @@ https://www.youtube.com/watch?v=8vQmTZTq7nw
 
 * For service managed identities, each user name must be unique on your server.
 
-* You also specify a user’s home directory, or landing directory, and assign an AWS IAM role to the user. 
+* You also specify a user’s home directory, or landing directory, and assign an AWS IAM role to the user.
     - Optionally, you can provide a session policy to limit user access only to the home directory of your Amazon S3 bucket.
     - The home directory is your S3 bucket or EFS filesystem. If no path is specified, your users are redirected to the root folder.
 * Amazon S3 vs Amazon EFS access management
@@ -2142,18 +2142,18 @@ https://www.youtube.com/watch?v=8vQmTZTq7nw
 
 ### Pricing
 
-You are billed on an hourly basis for each of the protocols enabled, from the time you create and configure your server endpoint, until the time you delete it. 
+You are billed on an hourly basis for each of the protocols enabled, from the time you create and configure your server endpoint, until the time you delete it.
 You are also billed based on the amount of data uploaded and downloaded over SFTP, FTPS, or FTP.
 There is no additional charge for using managed workflows.
 
 
-### AWS Transfer for SFTP     
+### AWS Transfer for SFTP
 
 * SFTP or Secure Shell File Transfer Protocol is a file transfer over SSH.
-* SFTP servers for Transfer Family operate over port 22.  
+* SFTP servers for Transfer Family operate over port 22.
 * SFTP is a newer protocol and uses a single channel for commands and data, requiring fewer port openings than FTPS.
 
-### AWS Transfer for FTPS 
+### AWS Transfer for FTPS
 
 * FTPS or File Transfer Protocol Secure is a file transfer with TLS encryption.
 * The port range that AWS Transfer Family uses to establish FTPS data connections is 8192–8200. For access connections, use port 21.

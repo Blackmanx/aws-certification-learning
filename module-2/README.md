@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 2: Cloud Savings and Billing
 [aws-cost-optimization](https://aws.amazon.com/pt/aws-cost-management/aws-cost-optimization/)
@@ -45,16 +45,16 @@ https://www.youtube.com/watch?v=YiqTBDmn00I
 
 **Benefits**
 Custom budgets that meet your needs:
-- Track your cost, usage, or coverage and utilization for your Reserved Instances and Savings Plans, across multiple dimensions, such as service, or Cost Categories. 
-- Aggregate your costs with an unblended or amortized view and include or exclude certain charges, such as tax and refunds. - Configure your Budget Actions with IAM policies, Service Control Policies (SCPs), and targeted running instances.  
+- Track your cost, usage, or coverage and utilization for your Reserved Instances and Savings Plans, across multiple dimensions, such as service, or Cost Categories.
+- Aggregate your costs with an unblended or amortized view and include or exclude certain charges, such as tax and refunds. - Configure your Budget Actions with IAM policies, Service Control Policies (SCPs), and targeted running instances.
 
 **Stay informed with alerts and reports**
-- Set up event-driven alert notifications for when actual or forecasted cost or usage exceeds your budget limit, or when your RI and Savings Plans' coverage or utilization drops below your threshold. 
+- Set up event-driven alert notifications for when actual or forecasted cost or usage exceeds your budget limit, or when your RI and Savings Plans' coverage or utilization drops below your threshold.
 - You can also choose to be informed on a daily, weekly, or monthly basis with pre-scheduled Budgets Reports.
 
 
 **Granular budget time periods**
-- Create annual, quarterly, monthly, or even daily budgets depending on your business needs. 
+- Create annual, quarterly, monthly, or even daily budgets depending on your business needs.
 - This allows you to take timely actions to prevent cost or usage overage, or inefficient utilization or resource coverage of your Reserved Instances and Savings Plans.
 
 

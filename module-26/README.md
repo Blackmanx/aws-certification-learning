@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws certification learning
+[1]: https://github.com/Blackmanx/aws certification learning
 
 # Module 26: Developer Tools
 
@@ -174,7 +174,7 @@ https://www.youtube.com/results?search_query=CodeBuild+Hands+on
 
 ### **Concepts**
 
-- An active user is any unique AWS identity (IAM user/role, federated user, or root account) that accesses AWS CodeCommit repositories during the month. AWS identities that are created through your use of other AWS Services, such as AWS CodeBuild and 
+- An active user is any unique AWS identity (IAM user/role, federated user, or root account) that accesses AWS CodeCommit repositories during the month. AWS identities that are created through your use of other AWS Services, such as AWS CodeBuild and
 AWS CodePipeline, as well as servers accessing CodeCommit using a unique AWS identity, count as active users.
 
 - A **repository** is the fundamental version control object in CodeCommit. It’s where you securely store code and files for your project. It also stores your project history, from the first commit through the latest changes.
@@ -192,7 +192,7 @@ AWS CodePipeline, as well as servers accessing CodeCommit using a unique AWS ide
 
 ### **Limits**
 
-- 1,000 repositories by default (no limits upon request). 
+- 1,000 repositories by default (no limits upon request).
 - A single blob in a repository cannot be more than 2 GB in size.
 - Total size of your files in a single commit should not be more than 20 MB.
 - An individual file should not exceed 6 MB.

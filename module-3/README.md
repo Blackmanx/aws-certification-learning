@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 3: Overview of AWS Global Infrastructure
 
@@ -73,7 +73,7 @@ AZs within a region provide inexpensive, low-latency network connectivity to oth
 
 - Each Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity
 - They are separated from each other so that they are isolated from disasters
-- They are connected with high bandwidth, ultra-low latency network 
+- They are connected with high bandwidth, ultra-low latency network
 
 <img src="../images/extra/infra.png" alt="aws" width=80%>
 **AWS Edge Locations**

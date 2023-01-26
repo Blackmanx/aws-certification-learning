@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Additional AWS Services
 
@@ -69,7 +69,7 @@ The AWS Database Migration Service can migrate your data to and from most widely
 AWS Database Migration Service supports homogenous migrations such as Oracle to Oracle, as well as heterogeneous migrations between different database platforms, such as Oracle or Microsoft SQL Server to Amazon Aurora.
 
 With AWS Database Migration Service, you can continuously replicate your data with high availability and consolidate databases into a petabyte-scale data warehouse by streaming data to Amazon Redshift and Amazon S3.
-    
+
 
 ### [AWS Server Migration Service](https://aws.amazon.com/server-migration-service/)
 AWS Server Migration Service (SMS) is an agentless service which makes it easier and faster for you to migrate thousands of on-premises workloads to AWS
@@ -132,7 +132,7 @@ This enables you to deliver features and updates rapidly and reliably.
 You can easily integrate AWS CodePipeline with third-party services such as GitHub or with your own custom plugin.
 
 ### [AWS X-Ray](https://aws.amazon.com/xray/features/)
-AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture.    
+AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture.
 
 With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors.
 
@@ -158,7 +158,7 @@ AWS Managed Services delivers consistent operations management and predictable r
 **Security** : 150+ managed guardrails and security checks
 **Incident management** : 80% of incidents proactively detected and notified
 **Automation** : 1.35M SSM docs executed per month, up to 97% automated
-**Cost savings** : 10-15% annual operational and AWS cost savings, on average 
+**Cost savings** : 10-15% annual operational and AWS cost savings, on average
 **AWS expertise** : 24x7 global coverage with tier 1 response and remediation
 
 **Cheat Sheets**
@@ -180,7 +180,7 @@ https://www.youtube.com/results?search_query=AWS+Managed+Services
 https://www.youtube.com/results?search_query=AWS+Managed+Services+hands+on
 
 
-    
+
 **************************************************************************************
 ## <a id="section-06" ></a> **6 - Analytics**
 ### [Amazon Athena](https://aws.amazon.com/athena/features/)
@@ -193,14 +193,14 @@ With a few clicks in the AWS Management Console, customers can point Athena at t
 You can use Athena to process logs, perform ad-hoc analysis, and run interactive queries
 
 Athena scales automatically – executing queries in parallel – so results are fast, even with large datasets and complex queries.
-    
+
 ### [Amazon EMR](https://aws.amazon.com/emr/features/)
 Amazon Elastic Map Reduce (EMR) provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances.
 
 You can also run other popular distributed frameworks such as Apache Spark, HBase, Presto, and Flink in Amazon EMR, and interact with data in other AWS data stores such as Amazon S3 and Amazon DynamoDB.
 
 Amazon EMR securely and reliably handles a broad set of big data use cases, including log analysis, web indexing, data transformations (ETL), machine learning, financial analysis, scientific simulation, and bioinformatic.
-    
+
 ### [Amazon CloudSearch](https://aws.amazon.com/cloudsearch/)
 
 Amazon CloudSearch is a managed service in the AWS Cloud that makes it simple and cost-effective to set up, manage, and scale a search solution for your website or application.
@@ -211,7 +211,7 @@ Amazon CloudSearch supports 34 languages and popular search features such as hig
 Amazon Elasticsearch Service is a fully managed service that makes it easy for you to deploy, secure, operate, and scale Elasticsearch to search, analyze, and visualize data in real-time.
 
 With Amazon Elasticsearch Service you get easy-to-use APIs and real-time analytics capabilities to power use-cases such as log analytics, full-text search, application monitoring, and clickstream analytics, with enterprise-grade availability, scalability, and security.
-    
+
 
 ### [Amazon Kinesis](https://aws.amazon.com/kinesis/)
 Amazon Kinesis makes it easy to collect, process, and analyze real-time, streaming data so you can get timely insights and react quickly to new information.
@@ -221,7 +221,7 @@ There are four types of Kinesis service:
 - **Kinesis Data Streams** enables you to build custom applications that process or analyze streaming data for specialized needs.
 - **Kinesis Data Firehose** is the easiest way to load streaming data into data stores and analytics tools.
 - **Amazon Kinesis Data Analytics** is the easiest way to process and analyze real-time, streaming data.
-    
+
 ### [AWS Data Pipeline](https://aws.amazon.com/datapipeline/)
 AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources, at specified intervals.
 

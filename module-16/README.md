@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # AWS Managed Services [managed-services](https://aws.amazon.com/pt/managed-services/)
 
@@ -24,12 +24,12 @@ AMS extends your team with operational capabilities including monitoring, incide
 ###$ **Benefícios**
 
 **Segurança**
-A AMS eleva a excelência operacional com monitoramento e remediação da segurança. 
+A AMS eleva a excelência operacional com monitoramento e remediação da segurança.
 A AMS reduz continuamente os riscos para os clientes, adotando as práticas recomendadas da AWS e um grande conjunto de ferramentas nativas da AWS. Nossos mecanismos de segurança fornecem controles de prevenção e detecção.
 
 
 **Disponibilidade**
-A AMS fornece revisões bem arquitetadas, verificações de regras de configuração, prevenção de riscos, gerenciamento e muito mais. 
+A AMS fornece revisões bem arquitetadas, verificações de regras de configuração, prevenção de riscos, gerenciamento e muito mais.
 A **AMS monitora o serviços 24 horas por dia**, com alarmes proativos e um ciclo de vida completo do gerenciamento de incidentes, desde a resposta até a resolução.
 
 **Eficiência**
@@ -39,8 +39,8 @@ A AMS adota uma abordagem que prioriza a automação de operações para reduzir
 A AMS escala os recursos operacionais de nossos clientes e evolui para atender às suas necessidades e ao cenário de segurança sempre dinâmico. O modelo operacional da AMS é baseado em um mecanismo de aprendizado contínuo que avalia as workloads e pipelines de acordo com políticas de segurança dinâmicas.
 
 **Conformidade**
-A AMS oferece um caminho acelerado em direção ao cumprimento das necessidades de conformidade. A AMS obteve certificações e atestados de conformidade com as regulamentações **PCI-DSS, HIPAA, HiTrust, GDPR, ISO, SOC 1, 2 e 3.** 
-Temos pré-autorização para operar workloads que exigem o nível Moderado do FedRamp. 
+A AMS oferece um caminho acelerado em direção ao cumprimento das necessidades de conformidade. A AMS obteve certificações e atestados de conformidade com as regulamentações **PCI-DSS, HIPAA, HiTrust, GDPR, ISO, SOC 1, 2 e 3.**
+Temos pré-autorização para operar workloads que exigem o nível Moderado do FedRamp.
 
 
 

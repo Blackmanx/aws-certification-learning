@@ -1,18 +1,18 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 5: Networking and Content Delivery:
 
 ## Content
 1. <a href="#section-1"> Amazon CloudFront  </a>
 2. <a href="#section-2"> AWS Direct Connect  </a>
-3. <a href="#section-3"> Elastic Load Balancing (ELB) </a> 
+3. <a href="#section-3"> Elastic Load Balancing (ELB) </a>
 4. <a href="#section-4"> AWS Global Accelerator  </a>
 5. <a href="#section-5"> AWS PrivateLink  </a>
 6. <a href="#section-6"> Amazon Route 53  </a>
-7. <a href="#section-7"> AWS Transit Gateway  </a> 
-8. <a href="#section-8"> Amazon VPC </a> 
+7. <a href="#section-7"> AWS Transit Gateway  </a>
+8. <a href="#section-8"> Amazon VPC </a>
 9. <a href="#section-9"> AWS VPN </a>
 10. <a href="#section-10"> Amazon API Gateway </a>
 

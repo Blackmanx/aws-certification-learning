@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 23: AWS Management Tools (SOA)
 
@@ -126,11 +126,11 @@ The following example declares a parameter named InstanceTypeParameter. This par
 
 
 ```
-Parameters: 
-  InstanceTypeParameter: 
+Parameters:
+  InstanceTypeParameter:
     Type: String
     Default: t2.micro
-    AllowedValues: 
+    AllowedValues:
       - t2.micro
       - m1.small
       - m1.large
@@ -236,7 +236,7 @@ Resources:
 ### Intrinsic Functions
 AWS CloudFormation provides several built-in functions that help you manage your stacks. Use intrinsic functions in your templates to assign values to properties that are not available until runtime.
 
-**EXAM TIP:** At a minimum, know the intrinsic functions listed below for the exam. The full list can be found at: 
+**EXAM TIP:** At a minimum, know the intrinsic functions listed below for the exam. The full list can be found at:
 
 https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html
 
@@ -386,7 +386,7 @@ Updating stacks:
 * AWS CloudFormation provides two methods for updating stacks: direct update or creating and executing change sets.
 * When you directly update a stack, you submit changes and AWS CloudFormation immediately deploys them.
 * Use direct updates when you want to quickly deploy your updates.
-* With change sets, you can preview the changes AWS CloudFormation will make to your stack, and then decide whether to 
+* With change sets, you can preview the changes AWS CloudFormation will make to your stack, and then decide whether to
 apply those changes.
 
 
@@ -516,7 +516,7 @@ Use the UpdatePolicy attribute to specify how AWS CloudFormation handles updates
 
 UpdateReplacePolicy attribute:
 
-* Use the UpdateReplacePolicy attribute to retain or (in some cases) backup the existing physical instance of a resource when it is replaced during a stack 
+* Use the UpdateReplacePolicy attribute to retain or (in some cases) backup the existing physical instance of a resource when it is replaced during a stack
 update operation.
 
 ### Rollbacks and Creation Failures

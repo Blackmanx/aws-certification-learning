@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 24: Comparison of AWS Services
 
@@ -44,13 +44,13 @@
 ***************************************************************************************************
 ## <a id="section-01"></a> **1 - Comparison of AWS Services**
 
-In this section, we will compare seemingly similar services and concepts, and highlight their main differences to help you gain a better understanding of these topics. 
+In this section, we will compare seemingly similar services and concepts, and highlight their main differences to help you gain a better understanding of these topics.
 
-The AWS certification exams are now composed of very tricky and complex scenario questions and going through this section can help you tackle these confusing questions with more confidence. 
+The AWS certification exams are now composed of very tricky and complex scenario questions and going through this section can help you tackle these confusing questions with more confidence.
 
 Do note that not every cheat sheet here will be applicable to each AWS certification exam so it’s best to also refer to our study guides when reviewing.
 
-We also recommend that you answer as many AWS practice test questions as you can to further increase your chances of passing the exam. 
+We also recommend that you answer as many AWS practice test questions as you can to further increase your chances of passing the exam.
 
 And if you want to access only the relevant cheat sheets for the specific AWS exams that you are preparing for then check
 

@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # AWS Identity and Access Management (IAM) [IAM](https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/introduction.html)
 
@@ -56,7 +56,7 @@ Controls access.
 
 **Identity Federation**
 - integrate an external entity to check for access, eg MicroSoft Active Directory
-- {U} create individual accounts to grant access 
+- {U} create individual accounts to grant access
 - {U} can also assign to a service
 - {P} defines permissions; apply to a user, group or role
 - {G} collections of users w/policies attached to them, or,
@@ -178,13 +178,13 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 *************************************************************************************************************
 ## <a id="section-02"></a> **2 - Using AWS IAM Access Analyzer**
-- AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity. 
-- This lets you identify unintended access to your resources and data, which is a security risk. 
-- Access Analyzer identifies resources shared with external principals by using logic-based reasoning to analyze the resource-based policies in your AWS environment. 
+- AWS IAM Access Analyzer helps you identify the resources in your organization and accounts, such as Amazon S3 buckets or IAM roles, shared with an external entity.
+- This lets you identify unintended access to your resources and data, which is a security risk.
+- Access Analyzer identifies resources shared with external principals by using logic-based reasoning to analyze the resource-based policies in your AWS environment.
 - For each instance of a resource shared outside of your account, Access Analyzer generates a finding. Findings include information about the access and the external principal granted to it. You can review findings to determine whether the access is intended and safe, or the access is unintended and a security risk. - In addition to helping you identify resources shared with an external entity, you can use Access Analyzer findings to preview how your policy affects public and cross-account access to your resource before deploying resource permissions.
 
 **Important**
-  - Access Analyzer analyzes only policies applied to resources in the same AWS Region where it's enabled. 
+  - Access Analyzer analyzes only policies applied to resources in the same AWS Region where it's enabled.
   - To monitor all resources in your AWS environment, you must create an analyzer to enable Access Analyzer in each Region where you're using supported AWS resources.
 
 **Access Analyzer analyzes the following resource types:**
@@ -207,7 +207,7 @@ That means granting the minimum permissions required to perform a specific task.
 - For Amazon CloudFront, you use key pairs to create signed URLs for private content, such as when you want to distribute restricted content that someone paid for.
 CloudFront Key Pairs - IAM users can't create CloudFront key pairs. You must log in using root credentials to create key pairs.
 To create signed URLs or signed cookies, you need a signer. A signer is either a trusted key group that you create in CloudFront, or an AWS account that contains a CloudFront key pair. AWS recommends that you use trusted key groups with signed URLs and signed cookies instead of using CloudFront key pairs.
-## <a id="section-04"></a> **4 - IAM Users** 
+## <a id="section-04"></a> **4 - IAM Users**
 - An IAM user is an entity that represents a person or service
 - Can be assigned:
     - An access key ID and secret access key for programmatic access to the AWS API, CLI, SDK, and other development tools
@@ -306,12 +306,12 @@ used to make AWS API calls.
         - <b>Session policies</b> – Pass advanced session policies when you use the AWS CLI or AWS API to assume a role or a federated user. Session policies limit the permissions that the role or user's identity-based policies grant to the session. Session policies limit permissions for a created session, but do not grant permissions. For more information, see Session Policies.
         -[access_policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)
 
-- **Trust policy** 
+- **Trust policy**
   - **Trust policies** define which principal entities (accounts, users, roles, and federated users) can assume the role. An IAM role is both an identity and a resource that supports resource-based policies. For this reason, you must attach both a trust policy and an identity-based policy to an IAM role. The IAM service supports only one type of resource-based policy called a role trust policy, which is attached to an IAM role.
   -[access_policies_boundaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_boundaries.html)
 
 - IAM policy variables [reference_policies_variables](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html)
-  - Instead of creating individual policies for each user, you can use policy variables and create a single policy that applies to multiple users (a group policy). 
+  - Instead of creating individual policies for each user, you can use policy variables and create a single policy that applies to multiple users (a group policy).
   - Policy variables act as placeholders. When you make a request to AWS, the placeholder is replaced by a value from the request when the policy is evaluated.
   - As an example, the following policy gives each of the users in the group full programmatic access to a user-specific object (their own "home directory") in Amazon S3.
  ```
@@ -419,7 +419,7 @@ Temporary security credentials work almost identically to long-term access key c
   - AssumeRoleWithWebIdentity – can be used by an user who passes a web identity token that
     indicates authentication from a known (trusted) identity provider.
   - GetSessionToken – can be used by an IAM user or AWS account root user (can be used for MFA).
-  - GetFederationToken – can be used by an IAM user or AWS account root user. 
+  - GetFederationToken – can be used by an IAM user or AWS account root user.
 
 
 AWS recommends using Cognito for identity federation with Internet identity providers.
@@ -444,7 +444,7 @@ Users can come from three sources.
     - Develop an Identity Broker to communicate with LDAP and AWS STS.
     - Identity Broker always authenticates with LDAP first, then with AWS STS.
     - Application then gets temporary access to AWS resources.
-  
+
   - **Scenario 2:**
     - Develop an Identity Broker to communicate with LDAP and AWS STS.
     - Identity Broker authenticates with LDAP first, then gets an IAM role associated with the user.
@@ -480,7 +480,7 @@ The following diagram shows the different methods of authentication available wi
 
 <img src="../images/aws_certification.png" title="aws_certification"></img>
 
-### Access Advisor feature 
+### Access Advisor feature
 - <b><i>Access Advisor feature on IAM console </i></b> - To help identify the unused roles, IAM reports the last-used timestamp that represents when a role was last used to  make an AWS request. Your security team can use this information to identify, analyze, and then confidently remove unused roles. This helps improve the security posture of your AWS environments. Additionally, by removing unused roles, you can simplify your monitoring and auditing efforts by focusing only on roles that are in use.
 - [access_policies_access-advisor](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_access-advisor-view-data.html)
 ## <a id="section-16"></a> **16 - IAM Best Practices**

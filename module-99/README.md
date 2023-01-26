@@ -1,8 +1,8 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
-# Module 99: Concepts‌ ‌and‌‌ Strategies 
+# Module 99: Concepts‌ ‌and‌‌ Strategies
 
 ## Contents
 1. <a href="#section-1"> Concepts‌ ‌and‌‌ Strategies </a>
@@ -191,7 +191,7 @@ https://tutorialsdojo.com/amazon-cloudwatch/
 
 
 
-- Amazon FSx 
+- Amazon FSx
 
 https://docs.aws.amazon.com/fsx/latest/WindowsGuide/aws-ad-integration-fsxW.html
 

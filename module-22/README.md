@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 22: Suggestion of laboratories AWS
 
@@ -48,7 +48,7 @@
 3. Introduction to Amazon Simple Storage Service (S3)
 4. How to enable versioning Amazon S3
 5. Creating S3 Lifecycle Policy
-6. Introduction to Amazon CloudFront 
+6. Introduction to Amazon CloudFront
 7. Understanding CloudFront Origin Groups
 8. Introduction to Amazon Elastic Compute Cloud (EC2)
 9. Launch a Spot Instance with Amazon EC2

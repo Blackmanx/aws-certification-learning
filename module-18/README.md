@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # [Módulo 18: Containers](https://aws.amazon.com/what-is/compute/)
 
@@ -140,25 +140,25 @@ Amazon VPC for isolation
 
 ![Amazon-EKS-Cloud](../images/Architecture-Service-Icons_01312022/Arch_Containers/64/Arch_Amazon-EKS-Anywhere_64.svg "Amazon-EKS-Cloud")
 
-Using Amazon EKS Anywhere is another way to deploy your containers on-premises. 
+Using Amazon EKS Anywhere is another way to deploy your containers on-premises.
 
-It works like Amazon ECS Anywhere, which allows you to run your containerized cluster entirely on your own. 
+It works like Amazon ECS Anywhere, which allows you to run your containerized cluster entirely on your own.
 
-This means that the hardware, app deployment location, control plane, and data plane are all controlled on your own physical network. 
+This means that the hardware, app deployment location, control plane, and data plane are all controlled on your own physical network.
 
 This gives you extensive control over all the components of your containerized application suite while maintaining official support from AWS.
 
 ### **Amazon EKS Distro**
 ![Amazon EKS Distro](../images/Architecture-Service-Icons_01312022/Arch_Containers/64/Arch_Amazon-EKS-Distro_64.svg "Amazon EKS Distro")
 
-The other deployment option that you can choose is Amazon EKS Distro. 
+The other deployment option that you can choose is Amazon EKS Distro.
 
-The word “distro” simply refers to the distribution of the same open-source Kubernetes software deployed by Amazon EKS in the AWS cloud. 
+The word “distro” simply refers to the distribution of the same open-source Kubernetes software deployed by Amazon EKS in the AWS cloud.
 
-Amazon EKS Distro follows the same Kubernetes version release cycle as Amazon EKS and is provided to you as an open-source project that you can deploy on your own computer or on-site environment. 
+Amazon EKS Distro follows the same Kubernetes version release cycle as Amazon EKS and is provided to you as an open-source project that you can deploy on your own computer or on-site environment.
 
 It’s similar to the Amazon EKS Anywhere option, except that it does not include support services offered by AWS.
- 
+
 
 ### **Amazon EKS Pricing**
 

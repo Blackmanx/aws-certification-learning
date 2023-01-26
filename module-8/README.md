@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 8: Databases
 
@@ -348,7 +348,7 @@ Amazon RDS provides a selection of instance types optimized to fit different rel
 
 For Amazon RDS feature-level pricing, see RDS Performance Insights and RDS Proxy pricing pages.
 
-As part of the AWS Free Tier, Amazon RDS helps new AWS customers get started for free with a managed database service in the cloud. Each calendar month, the 
+As part of the AWS Free Tier, Amazon RDS helps new AWS customers get started for free with a managed database service in the cloud. Each calendar month, the
 
 **Amazon RDS Free Tier allows you to use:**
 - 750 hours of Amazon RDS Single-AZ db.t2.micro, db.t3.micro, and db.t4g.micro Instances usage running MySQL, MariaDB, PostgreSQL databases each month. If running more than one instance, usage is aggregated across instance classes.
@@ -644,7 +644,7 @@ Check <a href="#section-12"> Amazon Aurora </a>
 
 ### **Aurora Serverless**
 - Amazon Aurora Serverless is an on-demand, autoscaling configuration for the MySQL-compatible and PostgreSQL-compatible editions of Aurora.
-- An Aurora Serverless DB cluster automatically starts up, shuts down, and scales capacity up or down based on the application’s needs. 
+- An Aurora Serverless DB cluster automatically starts up, shuts down, and scales capacity up or down based on the application’s needs.
 - Enables running database in the cloud without managing any database instances.
 - Provides a relatively simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.
 - use Cases include
@@ -699,13 +699,13 @@ https://www.youtube.com/results?search_query=Amazon+Aurora+Serverless+Hans+on
 
 **Definitions**
 
-Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. With Amazon Keyspaces, you can run your Cassandra workloads on 
+Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. With Amazon Keyspaces, you can run your Cassandra workloads on
 
-AWS using the same Cassandra application code and developer tools that you use today. You don’t have to provision, patch, or manage servers, and you don’t have to install, maintain, or operate software. 
+AWS using the same Cassandra application code and developer tools that you use today. You don’t have to provision, patch, or manage servers, and you don’t have to install, maintain, or operate software.
 
-Amazon Keyspaces is serverless, so you pay for only the resources you use and the service can automatically scale tables up and down in response to application traffic. 
+Amazon Keyspaces is serverless, so you pay for only the resources you use and the service can automatically scale tables up and down in response to application traffic.
 
-You can build applications that serve thousands of requests per second with virtually unlimited throughput and storage. Data is encrypted by default and Amazon Keyspaces enables you to back up your table data continuously using point-in-time recovery. 
+You can build applications that serve thousands of requests per second with virtually unlimited throughput and storage. Data is encrypted by default and Amazon Keyspaces enables you to back up your table data continuously using point-in-time recovery.
 
 Amazon Keyspaces gives you the performance, elasticity, and enterprise features you need to operate business-critical Cassandra workloads at scale.
 
@@ -757,7 +757,7 @@ https://www.youtube.com/results?search_query=Amazon+Keyspaces+hands+on
 
 
 ### **How it works**
-- Amazon Timestream is a fast, scalable, and serverless time-series database service that makes it easier to store and analyze trillions of events per day up to 1,000 times faster. 
+- Amazon Timestream is a fast, scalable, and serverless time-series database service that makes it easier to store and analyze trillions of events per day up to 1,000 times faster.
 - Amazon Timestream automatically scales up or down to adjust capacity and performance, so that you don’t have to manage the underlying infrastructure.
 
 

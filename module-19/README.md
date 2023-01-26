@@ -1,7 +1,7 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 19: Machine Learning
 
@@ -59,12 +59,12 @@
 - **Entities**
     - Detects and categorizes real-world objects like date, organization, person, quantity, brands, or even a title given to a song or movie.
     - **Custom Entity Recognition**
-        - Allows you to identify new entities that are not supported by the preset entities. 
+        - Allows you to identify new entities that are not supported by the preset entities.
         - This is useful if you want to extract entities that are specific only to your business, such as product codes.
 - **Sentiment**
     - Detects and classifies emotions into neutral, positive, negative, or mixed.
 - **Language**
-    - Detects the language used in a text by using identifiers from RFC 5646. 
+    - Detects the language used in a text by using identifiers from RFC 5646.
     - Useful for multilingual companies or applications.
 - **Key Phrases**
     - A key phrase refers to a noun or a noun phrase that describes a particular thing.
@@ -75,7 +75,7 @@
 
 
 ### **Amazon Comprehend Pricing**
-- Charges are based on units where a single unit is equal to 100 characters. 
+- Charges are based on units where a single unit is equal to 100 characters.
 - 3 unit (300 characters) minimum charge per request.
 - All insights except for Syntax analysis are charged for $0.0001 per 10M units. Syntax Analysis is charged for $0.00005 per 10M units.
 - Topic Modeling has a flat rate of $1.00 per job.
@@ -149,13 +149,13 @@ https://www.youtube.com/results?search_query=Amazon+Forecast++hands+on
 
 ### **What is Amazon Fraud Detector?**
 
-- Amazon Fraud Detector is a fully managed fraud detection service that automates the detection of potentially fraudulent activities online. 
+- Amazon Fraud Detector is a fully managed fraud detection service that automates the detection of potentially fraudulent activities online.
 - These activities include unauthorized transactions and the creation of fake accounts. Amazon Fraud Detector works by using machine learning to analyze your data. It does this in a way that builds off of the seasoned expertise of more than 20 years of fraud detection at Amazon.
 
 - You can use Amazon Fraud Detector to build customized fraud-detection models, add decision logic to interpret the model’s fraud evaluations, and assign outcomes such as pass or send for review for each possible fraud evaluation. With Amazon Fraud Detector, you don't need machine learning expertise to detect fraudulent activities.
 
-- To get started, collect and prepare fraud data that you collected at your organization. 
-- Amazon Fraud Detector then uses this data to train, test, and deploy a custom fraud detection model on your behalf. As a part of this process, Amazon Fraud Detector uses machine learning models that have learned patterns of fraud from AWS and Amazon’s own fraud expertise to evaluate your fraud data and generate model scores and model performance data. 
+- To get started, collect and prepare fraud data that you collected at your organization.
+- Amazon Fraud Detector then uses this data to train, test, and deploy a custom fraud detection model on your behalf. As a part of this process, Amazon Fraud Detector uses machine learning models that have learned patterns of fraud from AWS and Amazon’s own fraud expertise to evaluate your fraud data and generate model scores and model performance data.
 - You configure decision logic to interpret the model’s score and assign outcomes for how to deal with each fraud evaluation.
 
 - Detect online fraud faster with machine learning
@@ -198,8 +198,8 @@ https://www.youtube.com/results?search_query=Amazon+Fraud+Detector+hands+on
 
 **Definitions**
 
-- Amazon Kendra is a highly accurate and intelligent search service that allows your users to search unstructured and structured data using natural language processing and advanced search algorithms. 
-- It returns specific answers to questions, giving users an experience that's close to interacting with a human expert. 
+- Amazon Kendra is a highly accurate and intelligent search service that allows your users to search unstructured and structured data using natural language processing and advanced search algorithms.
+- It returns specific answers to questions, giving users an experience that's close to interacting with a human expert.
 - It is highly scalable and capable of meeting performance demands, tightly integrated with other AWS services such as Amazon S3 and Amazon Lex, and offers enterprise-grade security.
 - For information on Amazon Kendra and Amazon Kendra Intelligent Ranking API operations, see the API reference documentation.
 - Amazon Kendra users can ask the following types of questions, or queries:
@@ -314,7 +314,7 @@ https://youtu.be/Xj_d2eX4nTY
 - $0.004 per voice request
 - $0.00075 per text request
 - 10,000 text and 5,000 speech requests free for 12 months
-    - with the AWS Free Tier 
+    - with the AWS Free Tier
 
 
 **Cheat Sheets**
@@ -385,7 +385,7 @@ https://www.youtube.com/results?search_query=Amazon+Lex+hands+on
 - Amazon Polly accepts plain text, UTF-8, and SSML as inputs.
 - Pronounces out abbreviations and acronyms
 - Interprets date/time and unit of measurements.
-- Homograph disambiguation 
+- Homograph disambiguation
     - For example,  “St.” can be read as ”saint” or “street.” Amazon Polly is capable of identifying their difference depending on a given context.
 
 - Custom lexicon
@@ -672,7 +672,7 @@ https://www.youtube.com/results?search_query=Amazon+Textract+hands+on
 
 - Custom Vocabulary
     - Helps improve accuracy for content that has business-specific terms such as medical or legal terms.
-- Vocabulary Filtering 
+- Vocabulary Filtering
     - Allows you to create a list of words to filter from the transcript.
     - Useful for blocking profanities.
 - Multiple speaker recognition

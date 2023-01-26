@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # Module 1: Overview of Cloud Concepts
 
@@ -90,7 +90,7 @@ One thing is clear, however, is that regardless of the definitions - the first p
 
 High‌ ‌availability‌ ‌means‌ ‌having‌ ‌redundant‌ ‌copies‌ ‌of‌ ‌an‌ ‌object‌ ‌or‌ ‌resource‌ ‌to‌ ‌make‌ ‌sure‌ ‌that‌ ‌another‌ ‌can‌‌ take‌ ‌its‌ ‌place‌ ‌when‌ ‌something‌ ‌happens‌ ‌to‌ ‌it.‌ ‌
 
-High‌ ‌availability‌ ‌can‌ ‌apply‌ ‌to‌ ‌almost‌ ‌anything:‌ ‌compute‌‌ servers,‌ ‌data‌ ‌storage,‌ ‌databases,‌ ‌networks,‌ ‌etc.‌ 
+High‌ ‌availability‌ ‌can‌ ‌apply‌ ‌to‌ ‌almost‌ ‌anything:‌ ‌compute‌‌ servers,‌ ‌data‌ ‌storage,‌ ‌databases,‌ ‌networks,‌ ‌etc.‌
 
 ‌High‌ ‌availability‌ ‌is‌ ‌one‌ ‌of‌ ‌the‌ ‌main‌ ‌selling‌ ‌points‌ ‌of‌‌ using‌ ‌the‌ ‌cloud.‌ ‌It‌ ‌might‌ ‌be‌ ‌expensive,‌ ‌but‌ ‌companies‌ ‌that‌ ‌cannot‌ ‌risk‌ ‌having‌ ‌downtime‌ ‌nor‌ ‌data‌ ‌loss‌‌ should‌ ‌build‌ ‌highly‌ ‌available‌ ‌infrastructures‌ ‌in‌ ‌the‌ ‌cloud‌ ‌to‌ ‌protect‌ ‌their‌ ‌assets.‌ ‌
 
@@ -121,7 +121,7 @@ Redundancy‌ ‌is‌ ‌a‌ ‌mix‌ ‌of‌ ‌all‌ ‌the‌ ‌things�
 as‌ ‌it‌ ‌can‌ ‌protect‌ ‌you‌ ‌from‌ ‌all‌ ‌sorts‌ ‌of‌ ‌issues‌ ‌that‌ ‌are‌ ‌not‌ ‌as‌ ‌tolerable‌ ‌in‌ ‌an‌ ‌on-premises‌ ‌setup.‌ ‌There‌ ‌are‌‌ a‌ ‌lot‌ ‌of‌ ‌things‌ ‌in‌ ‌the‌ ‌cloud‌ ‌that‌ ‌you‌ ‌can‌ and‌ ‌must‌‌ apply‌ ‌redundancy.‌ ‌It's‌ ‌not‌ ‌just‌ ‌servers‌ ‌and‌ ‌databases,‌‌ but‌ ‌also‌ ‌file‌ ‌storages,‌ ‌security‌ ‌applications,‌ ‌networks,‌ ‌monitoring‌ ‌tools‌ ‌and‌ ‌even‌ ‌personnel.‌ ‌By‌ ‌having‌‌ additional‌ ‌layers‌ ‌of‌ ‌safeguards,‌ ‌you‌ ‌lessen‌ ‌the‌ ‌risk‌ ‌of‌ ‌things‌ ‌going‌ ‌haywire‌ ‌and‌ ‌costing‌ ‌you‌ ‌more‌ ‌than‌ ‌a‌‌ few‌ ‌bucks‌ ‌of‌ ‌extra‌ ‌servers.‌ ‌
 
 ‌
-**Disaster‌ ‌Recovery‌** 
+**Disaster‌ ‌Recovery‌**
 
 Disaster‌ ‌recovery‌ ‌is‌ ‌the‌ ‌practice‌ ‌of‌ ‌ensuring‌ ‌that‌ ‌you‌ ‌have‌ ‌a‌ ‌standardized‌ ‌plan‌ ‌on‌ ‌how‌ ‌to‌ recover‌ ‌your‌‌ operations‌ ‌in‌ ‌case‌ ‌of‌ ‌total‌ ‌failure.‌ ‌Usually,‌ ‌this‌ ‌means‌ ‌having‌ ‌a‌ ‌copy‌ ‌of‌ ‌your‌ ‌infrastructure‌ ‌running‌ ‌in‌ ‌a‌‌ different‌ ‌location,‌ ‌so‌ ‌that‌ ‌if‌ ‌your‌ ‌primary‌ ‌experiences‌ ‌a‌ ‌disaster,‌ ‌you‌ ‌can‌ ‌quickly‌ ‌failover‌ ‌to‌ ‌your‌‌ secondary.‌ ‌
 Your‌ ‌disaster‌ ‌recovery‌ ‌plan‌ ‌depends‌ ‌on‌ ‌the‌ ‌amount‌ ‌of‌ ‌time‌ ‌that‌ ‌you‌ ‌have‌ ‌to‌ ‌bring‌ ‌back‌ ‌up‌‌ your‌ ‌operations‌ ‌(RTO),‌ ‌and‌ ‌the‌ ‌amount‌ ‌of‌ ‌data‌ ‌loss‌ ‌that‌ ‌your‌ ‌business‌ ‌can‌ ‌tolerate‌ ‌(RPO).‌ ‌Having‌ ‌a‌‌ disaster‌ ‌recovery‌ ‌plan‌ ‌is‌ ‌crucial‌ ‌especially‌ ‌for‌ ‌live‌ ‌production‌ ‌databases.‌ ‌We‌ ‌have‌ ‌a‌ ‌number‌ ‌of‌ ‌DR‌‌ strategies‌ ‌that‌ ‌meet‌ ‌different‌ ‌RTO‌ ‌and‌ ‌RPO‌ ‌objectives,‌ ‌which‌ ‌we‌ ‌will‌ ‌discuss‌ ‌in‌ ‌more‌ ‌detail‌ ‌later‌ ‌on.‌ ‌
@@ -166,7 +166,7 @@ There are several reasons why the cloud market is growing so fast. Some of them 
 
 ### The six pillars of a well-architected structure
 
-<a href="https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/" target="_blank"> 
+<a href="https://aws.amazon.com/blogs/apn/the-6-pillars-of-the-aws-well-architected-framework/" target="_blank">
     The six pillars of a well-architected structure
 </a>
 
@@ -182,7 +182,7 @@ The AWS Well-Architected Framework helps cloud architects build the most secure,
 
 We provide an overview of the six pillars of the Well-Architected Framework and explore design principles and best practices. You can find more details, including definitions, FAQs, and resources, in the whitepaper for each pillar that we link to below.
 
-<a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html" target="_blank"> 
+<a href="https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html" target="_blank">
     Whitepaper - overview of the six pillars of the Well-Architected Framework
 </a>
 <br/><br/><br/>
@@ -384,7 +384,7 @@ A AWS promove as [seis vantagens](https://docs.aws.amazon.com/whitepapers/latest
 
 6. **Go global in minutes** – Easily deploy your application to multiple regions of the world with just a few clicks. This means you can provide lower latency and a better experience for your customers at minimal cost.
 
-<a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html" target="_blank"> 
+<a href="https://docs.aws.amazon.com/whitepapers/latest/aws-overview/six-advantages-of-cloud-computing.html" target="_blank">
     Whitepaper - Six advantages of cloud computing
 </a>
 <br/><br/><br/>
@@ -457,7 +457,7 @@ For EC2 this includes network level security (NACLs, security groups), operating
 
 The following diagram shows the split of responsibilities between AWS and the customer:
 
-<img src="../images/extra/aws-shared-responsibility-model.jpeg" alt="aws-shared-responsibility-model" width=80% /> 
+<img src="../images/extra/aws-shared-responsibility-model.jpeg" alt="aws-shared-responsibility-model" width=80% />
 
 
 Inherited Controls – Controls which a customer fully inherits from AWS.
@@ -519,11 +519,11 @@ Business and Enterprise allow unlimited contacts to open unlimited cases.
 
 *** Plans are subject to a 30 day minimum term.
 
-****Customers qualify for the regional pricing if all accounts on their billing profile are concentrated in qualified LATAM countries, India, or Mainland China subject to conditions below. 
+****Customers qualify for the regional pricing if all accounts on their billing profile are concentrated in qualified LATAM countries, India, or Mainland China subject to conditions below.
 ## <a id="section-07"></a> **7 - Architecting for the Cloud**
 
 
-What are the benefits of using the AWS Managed Services? 
+What are the benefits of using the AWS Managed Services?
 
 AWS Managed Services manages the daily operations of your AWS infrastructure in alignment with ITIL processes. AWS Managed Services provides a baseline integration with IT Service Management (ITSM) tools such as the ServiceNow platform.
 

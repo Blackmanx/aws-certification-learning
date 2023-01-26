@@ -47,34 +47,34 @@ To other repositories that will be linked to the same but specific to each Exam.
   - [Module 27: Business Applications ][27]
   - [Module 98: Common‌ ‌Exam‌ ‌Scenarios‌ ‌][98]
   - [Module 99: Concepts‌ ‌and‌‌ Strategies][99]
- 
 
-[1]: https://github.com/weder96/aws-certification-learning/tree/main/module-1
-[2]: https://github.com/weder96/aws-certification-learning/tree/main/module-2
-[3]: https://github.com/weder96/aws-certification-learning/tree/main/module-3
-[4]: https://github.com/weder96/aws-certification-learning/tree/main/module-4
-[5]: https://github.com/weder96/aws-certification-learning/tree/main/module-5
-[6]: https://github.com/weder96/aws-certification-learning/tree/main/module-6
-[7]: https://github.com/weder96/aws-certification-learning/tree/main/module-7
-[8]: https://github.com/weder96/aws-certification-learning/tree/main/module-8
-[9]: https://github.com/weder96/aws-certification-learning/tree/main/module-9
-[10]: https://github.com/weder96/aws-certification-learning/tree/main/module-10
-[11]: https://github.com/weder96/aws-certification-learning/tree/main/module-11
-[12]: https://github.com/weder96/aws-certification-learning/tree/main/module-12
-[13]: https://github.com/weder96/aws-certification-learning/tree/main/module-13
-[14]: https://github.com/weder96/aws-certification-learning/tree/main/module-14
-[15]: https://github.com/weder96/aws-certification-learning/tree/main/module-15
-[16]: https://github.com/weder96/aws-certification-learning/tree/main/module-16
-[17]: https://github.com/weder96/aws-certification-learning/tree/main/module-17
-[18]: https://github.com/weder96/aws-certification-learning/tree/main/module-18
-[19]: https://github.com/weder96/aws-certification-learning/tree/main/module-19
-[20]: https://github.com/weder96/aws-certification-learning/tree/main/module-20
-[21]: https://github.com/weder96/aws-certification-learning/tree/main/module-21
-[22]: https://github.com/weder96/aws-certification-learning/tree/main/module-22
-[23]: https://github.com/weder96/aws-certification-learning/tree/main/module-23
-[24]: https://github.com/weder96/aws-certification-learning/tree/main/module-24
-[25]: https://github.com/weder96/aws-certification-learning/tree/main/module-25
-[26]: https://github.com/weder96/aws-certification-learning/tree/main/module-26
-[27]: https://github.com/weder96/aws-certification-learning/tree/main/module-27
-[98]: https://github.com/weder96/aws-certification-learning/tree/main/module-98
-[99]: https://github.com/weder96/aws-certification-learning/tree/main/module-99
+
+[1]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-1
+[2]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-2
+[3]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-3
+[4]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-4
+[5]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-5
+[6]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-6
+[7]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-7
+[8]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-8
+[9]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-9
+[10]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-10
+[11]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-11
+[12]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-12
+[13]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-13
+[14]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-14
+[15]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-15
+[16]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-16
+[17]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-17
+[18]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-18
+[19]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-19
+[20]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-20
+[21]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-21
+[22]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-22
+[23]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-23
+[24]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-24
+[25]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-25
+[26]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-26
+[27]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-27
+[98]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-98
+[99]: https://github.com/Blackmanx/aws-certification-learning/tree/main/module-99
