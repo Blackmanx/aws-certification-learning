@@ -1,6 +1,6 @@
 <img src="../images/extra/banner_aws.png" alt="aws" width=80 height=50 /> [General Content AWS Cloud][1]
 
-[1]: https://github.com/weder96/aws-certification-learning
+[1]: https://github.com/Blackmanx/aws-certification-learning
 
 # [Module 6: Compute](https://aws.amazon.com/what-is/compute/)
 
@@ -69,43 +69,50 @@ With [EC2](https://aws.amazon.com/ec2/?nc1=h_ls) you have full control at the op
 - On Linux you can use the curl command to view metadata and user data, e.g.“curl http://169.254.169.254/latest/meta-data/”.
 - The Instance Metadata Query tool allows you to query the instance metadata without having to type out the full URI or category names.
 
-**Launching EC2 Instances**
+**Launching EC2 Instances options**
 
-Choose an Amazon Machine Image (AMI).
+- Operating System
+- How much compute power & cores (CPU)
+- How much random-access memory (RAM)
+- How much storage-space
+    - Network storage (EBS or EFS)
+    - Hardware (EC2 Instance Store)
+- Network card: Speed of the card, public IP (default is to use the subnet setting)
+- Firewall rules/**security group**
+- Bootscrap script: EC2 User Data (only run once at the instance first start, useful for installing packages or setting up some services)
 
-Choose whether to auto-assign a public IP – default is to use the subnet setting.
+**Instance types**
 
-Can add an instance to a placement group (more about this below).
+|               **General Purpose**              |                                                                     **Compute Optimized**                                                                    |                                                                                                            **Memory Optimized**                                                                                                           |                                                                                             **Storage Opimized**                                                                                             |
+|:----------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| Balance between compute, memory and networking | High performance processors                                                                                                                                  | Fast performance for processing large data sets in memory                                                                                                                                                                                 | Great for storage-intensive tasks that require high sequential read and write access to large data sets on local storage                                                                                     |
+| Labeled with Tx, Mx and A1 (and Mac)           | Labeled with Cx                                                                                                                                              | Labeled with Rx, Xx, High Memory and z1d                                                                                                                                                                                                  | Labeled as Ix, Dx and H1                                                                                                                                                                                     |
+| Good for web servers or code repositories      | Great for tasks like HPC, HP web servers, media transcoding, batch processing workloads, dedicated gaming servers, scientific modeling, machine learning.... | Great for High performance, relational or non-relational databases Distributed web scale cache stores In-memory databases optimized for BI (business intelligence) Applications performing real-time processing of  big unstructured data | Great for High frequency online transaction processing (OLTP) systems Relational & NoSQL databases Cache for in-memory databases (for example, Redis) Data warehousing applications Distributed file systems |
 
-Instances can be assigned to IAM roles which configures them with credentials to access AWS resources.
 
-Termination protection can be enabled and prevents you from terminating an instance.
+**Nice to know**
 
-Basic monitoring is enabled by default (5-minute periods), detailed monitoring can be enabled (1-minute periods, chargeable).
+- Instances can be assigned to IAM roles which configures them with credentials to access AWS resources.
 
-Can define shared or dedicated tenancy.
+- Termination protection can be enabled and prevents you from terminating an instance.
 
-T2 unlimited allows applications to burst past CPU performance baselines as required (chargeable).
+- Basic monitoring is enabled by default (5-minute periods), detailed monitoring can be enabled (1-minute periods, chargeable).
 
-Can add a script to run on startup (user data).
+- Can define shared or dedicated tenancy.
 
-Can join to a directory (Windows instances only).
+- T2 unlimited allows applications to burst past CPU performance baselines as required (chargeable).
 
-There is an option to enable an Elastic GPU (Windows instances only).
+- Windows instances can join to a directory and enable an Elastic GPU.
 
-Storage options include adding additional volumes and choosing the volume type.
+- Use Amazon Elastic File System (EFS) for mounting a shared filesystem to multiple EC2 instances.
 
-Use Amazon Elastic File System (EFS) for mounting a shared filesystem to multiple EC2 instances.
+- Non-root volumes can be encrypted.
 
-Non-root volumes can be encrypted.
+- Root volumes can be encrypted **at launch.**
 
-Root volumes can be encrypted at launch.
+- Tags can be assigned
 
-There is an option to create tags (or can be done later).
-
-You can select an existing security group or create a new one.
-
-You must create or use an existing key pair – this is required if you want to access your instances via SSH. However, you can also attach the ‘AmazonEC2RoleforSSM’ IAM role to your EC2 instance to allow connection to your instance via Systems Manager (Session Manager).
+- You must create or use an existing key pair – this is required if you want to access your instances via SSH. However, you can also attach the ‘AmazonEC2RoleforSSM’ IAM role to your EC2 instance to allow connection to your instance via Systems Manager (Session Manager).
 
 
 ### **Amazon Machine Images**
@@ -251,7 +258,7 @@ You are limited to running up to a total of 20 On-Demand instances across the in
 |Characteristic	|Dedicated Instances	|Dedicated Hosts|
 |---------------|-----------------------|---------------|
 |Enables the use of dedicated physical servers	|YES	|YES|
-|Per instance billing (subject to a $2 per region fee)	|YES|	NO| 
+|Per instance billing (subject to a $2 per region fee)	|YES|	NO|
 |Per host billing	 |	NO|YES|
 |Visibility of sockets, cores, host ID|NO	| 	YES|
 |Affinity between a host and instance	|NO |	YES|
@@ -326,7 +333,7 @@ Each instance type includes one or more instance sizes, allowing you to scale yo
 
 **References**
 
-[AWS Lambda](https://github.com/weder96/aws-certification-learning/tree/main/module-14#section-1)
+[AWS Lambda](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-14#section-1)
 
 ***************************************************************************************************
 ## <a id="section-6"></a> **6 - Amazon LightSail**
@@ -357,10 +364,10 @@ Can deploy load balancers and attach block storage.
 
 Public API.
 
-**Limited to:** 
-    - 20 Amazon LightSail instances 
-    - 5 static IPs 
-    - 3 DNS zones 
+**Limited to:**
+    - 20 Amazon LightSail instances
+    - 5 static IPs
+    - 3 DNS zones
     - 20 TB block storage
     - 40 databases
     - 5 load balancers per account.
@@ -856,9 +863,9 @@ https://www.youtube.com/results?search_query=AWS+Serverless+Application+Reposito
 
 VMware Cloud on AWS provides dedicated, single-tenant cloud infrastructure with support multiple SDDC per organization, with up to 16 hosts per cluster, delivered on the next-generation bare metal AWS infrastructure based on the latest Amazon EC2 Storage Optimized high I/O instances and featuring low-latency Non-Volatile Memory Express (NVMe) based SSDs.
 
-You can quickly create new VMware SDDC clusters on AWS Cloud through a web-based console or by utilizing a RESTful API. VMware manages and operates the service including VMware SDDC software components and the modern web-based console. 
+You can quickly create new VMware SDDC clusters on AWS Cloud through a web-based console or by utilizing a RESTful API. VMware manages and operates the service including VMware SDDC software components and the modern web-based console.
 
-VMware delivers service status with notifications, enterprise-grade 24x7 service support & site reliability operations, and support center with FAQs, forums & chat support. VMware delivers scheduled SDDC software updates and emergency software patches with notifications, and auto-remediation of hardware failures. 
+VMware delivers service status with notifications, enterprise-grade 24x7 service support & site reliability operations, and support center with FAQs, forums & chat support. VMware delivers scheduled SDDC software updates and emergency software patches with notifications, and auto-remediation of hardware failures.
 
 **Cheat Sheets**
 
@@ -902,7 +909,7 @@ https://www.youtube.com/results?search_query=VMware+Cloud+on+AWS+hands+ON
 
 - Wavelength is the AWS infrastructure used to run workloads that require ultra-low latencies over mobile networks.
 
-**Wavelength Zone (WZ)** 
+**Wavelength Zone (WZ)**
 - A logical extension of the Region. It is where the Wavelength infrastructure is deployed and is managed by the Region’s control plane.
 - Use WZs for application components that require ultra-low latency, enhanced bandwidth, or improved service quality across 5G mobile networks.
 - To give the most scalable, robust, and cost-effective alternatives for components, AWS recommends that you design the edge applications in a hub and spoke model with the Region.
