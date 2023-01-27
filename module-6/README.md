@@ -268,6 +268,9 @@ We'll see more about this service later.
 
 ![AWS Lambda](../images/Architecture-Service-Icons_01312022/Arch_Compute/48/Arch_AWS-Lambda_48.png "AWS Lambda")
 
+AWS Lambda is a serverless service (where we just deploy code).
+In Lambda, we deploy virtual functions limited by time with short executions that run **on-demand** and where scaling is **automated**. We'll see more about this later.
+
 **References**
 
 [AWS Lambda](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-14#section-1)
