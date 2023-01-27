@@ -32,7 +32,7 @@
 
 **References:**
 
-[https://github.com/Blackmanx/aws-certification-learning/tree/main/module-10](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-10)
+[Module 10 - AWS Auto Scaling](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-10)
 
 
 
@@ -42,6 +42,13 @@
 ## <a id="section-2"></a> **2 - AWS CloudFormation**
 
 ![AWS CloudFormation](../images/Architecture-Service-Icons_01312022/Arch_Management-Governance/48/Arch_AWS-CloudFormation_48.png "AWS CloudFormation")
+
+AWS CloudFormation is a declarative way of outlining your AWS Infrastructure for any resources.
+Within a AWS CloudFormation template, you tell it what services and configurations want, and then
+CloudFormation creates those for you in the right order. It's **infrastructure as code**.
+
+[Module 23 - AWS CloudFormation](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-23#section-01)
+
 
 **Cheat Sheets**
 
