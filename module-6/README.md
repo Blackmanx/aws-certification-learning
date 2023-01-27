@@ -255,13 +255,14 @@ Each instance type includes one or more instance sizes, allowing you to scale yo
 
 ![Amazon-Elastic-Container-Service](../images/Architecture-Service-Icons_01312022/Arch_Compute/48/Arch_Amazon-Elastic-Container-Service_48.png "Amazon-Elastic-Container-Service")
 
+Amazon Elastic Container Service is Amazon's own container platform. It's the equivalent of launching docker containers on AWS, but you launch ECS Tasks on ECS clusters instead.
 
-**Cheat Sheets**
+Each EC2 instance must run the ECS Agent to register in the ECS cluster, and AWS takes care of starting and stopping containers.
+We'll see more about this service later.
 
-**References:**
+**References**
 
-**Videos**
-
+[AWS ECS](https://github.com/Blackmanx/aws-certification-learning/tree/main/module-18#section-02)
 ***************************************************************************************************
 ## <a id="section-5"></a> **5 - AWS Lambda**
 
