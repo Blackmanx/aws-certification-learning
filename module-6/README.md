@@ -155,9 +155,26 @@ It only works on **Amazon Linux 2** instances.
 
 ### **Rehost**
 
-A company is planning to move a number of legacy applications to the AWS Cloud. The solution must be cost-effective. Which approach should the company take
+`A company is planning to move a number of legacy applications to the AWS Cloud. The solution must be cost-effective.`
 
 The most cost-effective solution that works is to use Amazon EC2 instances that are right-sized with the most optimum instance types. Right-sizing is the process of ensuring that the instance type selected for each application provides the right amount of resources for the application.
+
+### **Placement Groups**
+
+There are three placement strategies for EC2 instances:
+
+- `Cluster`: Cluster instances into a low-latency group in a single Availability Zone
+  - **Pros**: Great network
+  - **Cons**: If the rack fails, all the instances fail
+  - **Use case**: Big Data job that needs to complete fast or apps that need extremely low latency and high network throughput
+- `Spread`: Spread instances across underlying hardware (7 instances per group per AZ)
+  - **Pros**: Can span across AZs, reduced risk in simultaneous failure and EC2 instances are in different physical hardware
+  - **Cons**: Limited to 7 instances per AZ per placement group
+  - **Use case**: Application that needs to maximize high availability or critical apps where instances must be isolated from failure from each other
+- `Partition`: Spreads instances across many different partitions on different sets of racks within an AZ. Scales to hundreds of EC2 instances per group (Suited for Hadoop, Cassandra, Kafka)
+  - **Pros**: Up to 7 partitions per AZ, can span across AZs, supports hundreds of EC2 instances, a partition failure won't affect other partitions as they don't share racks with the instances in the other partitions
+  - **Cons**: A failure can still affect a lot of EC2 instances
+  - **Use case**: HDFS, HBase, Cassandra, Kafka
 
 
 **Cheat Sheets**
